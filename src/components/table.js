@@ -6,19 +6,19 @@ const Table = ({ data }) => {
     const columns = data[0] && Object.keys(data[0]);
 
     return (
-        <div className="Table">
+        <div className="Table_content">
           <div
-            className="TableRow"
+            className="Row"
             style={{ background: "beige"}}
           >
             {data[0] &&
-              columns.map((heading) => <div className="TableHead">{heading}</div>)}
+              columns.map((heading) => <div className="Head">{heading}</div>)}
           </div>
     
           {data.map((row) => (
-            <div className="TableRow">
+            <div className="Row">
               {columns.map((column) => (
-                <div className="TableCell">{row[column]}</div>
+                <div className="Cell">{row[column]}</div>
               ))}
             </div>
           ))}

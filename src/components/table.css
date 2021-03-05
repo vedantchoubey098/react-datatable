@@ -1,18 +1,18 @@
-.Table {
+.Table_content {
     display: table;
     width: 100%;
     margin-top: 25px;
   }
   
-  .TableRow {
+  .Row {
     display: table-row;
   }
   .TableHeading {
     display: table-header-group;
     background-color: #ddd;
   }
-  .TableCell,
-  .TableHead {
+  .Cell,
+  .Head {
     display: table-cell;
     padding: 15px 10px;
     border: 5px solid white;
@@ -23,15 +23,15 @@
     font-weight: bold;
   }
   
-  .TableRow:nth-child(odd) {
+  .Row:nth-child(odd) {
     background-color: beige;
   }
   
-  .TableRow:nth-child(even) {
+  .Row:nth-child(even) {
     background-color: white;
   }
   
-  .TableHead {
+  .Head {
     font-weight: bold;
     color: #000;
     border: 0.1px solid #000;
